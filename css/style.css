@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+section {
+  border: 1px dotted yellowgreen;
+}
+
+div {
+  border: 1px dashed orangered;
+}
+
+/* ------------
+    NAVIGATION
+   ------------ */
+.list {
+  list-style: none;
+}
+
+.wrapper {
+}
+
+.list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list > li > a {
+  text-decoration: none;
+}
