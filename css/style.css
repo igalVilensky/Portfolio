@@ -5,6 +5,8 @@
 }
 
 body {
+  background: #191a1d;
+  color: white;
 }
 
 section {
@@ -15,21 +17,9 @@ div {
   border: 1px dashed orangered;
 }
 
+a {
+  color: white;
+}
 /* ------------
     NAVIGATION
    ------------ */
-.list {
-  list-style: none;
-}
-
-.wrapper {
-}
-
-.list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.list > li > a {
-  text-decoration: none;
-}
