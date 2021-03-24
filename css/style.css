@@ -4,19 +4,24 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  height: 100vh;
+}
+
 body {
   background: #191a1d;
   color: white;
   font-family: "Roboto", sans-serif;
 }
 
-section {
+/* section {
   border: 1px dotted yellowgreen;
 }
 
 div {
   border: 1px dashed orangered;
-}
+} */
 
 /* a {
   color: white;
@@ -26,10 +31,20 @@ div {
     TOP SECTION
    ------------- */
 
+.wrapper {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .top {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../image/bg.jpg);
-  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .header {
@@ -62,10 +77,43 @@ div {
 .nav-link {
   color: white;
   text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 21px;
   border-bottom: 1px solid transparent;
   transition: 0.3s;
 }
 
 .nav-link:hover {
   border-bottom: 1px solid whitesmoke;
+}
+
+/* TOP SECTION TEXT */
+
+.title-h1 {
+  margin-bottom: 150px;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.title-h1 > span {
+  font-weight: 900;
+  color: yellowgreen;
+}
+
+/* SCROLL */
+
+.btn-scroll {
+  background-color: transparent;
+
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-scroll img {
+  height: 100px;
+  width: 100px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(108deg)
+    brightness(114%) contrast(120%);
 }
