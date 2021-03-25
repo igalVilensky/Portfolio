@@ -4,24 +4,68 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT</title>
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <section class="top">
       <header>
         <div class="header">
-          <img src="./image/logo.png" alt="" />
+          <div class="logo">
+            <a href="./index.html"><img src="./image/logo.png" alt="" /></a>
+          </div>
           <nav>
             <ul class="nav">
-              <li class="list-item"><a href="./projects.html">PROJECTS</a></li>
-              <li class="list-item"><a href="./services.html">SERVICES</a></li>
-              <li class="list-item"><a href="./skills.html">SKILLS</a></li>
-              <li class="list-item"><a href="./about.html">ABOUT</a></li>
-              <li class="list-item"><a href="./contact.html">CONTACT</a></li>
+              <li class="list-item">
+                <a class="nav-link" href="./projects.html">PROJECTS</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-link" href="./services.html">SERVICES</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-link" href="./skills.html">SKILLS</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-link" href="./about.html">ABOUT</a>
+              </li>
+              <li class="list-item">
+                <a class="nav-link" href="./contact.html">CONTACT</a>
+              </li>
             </ul>
           </nav>
         </div>
       </header>
+      <div class="wrapper">
+        <h1 class="title-h1">Hey, I am a <span>About</span>!</h1>
+      </div>
+      <button class="btn-scroll">
+        <img src="./image/Mouse-scroll.png" alt="Sroll" />
+      </button>
+    </section>
+    <section class="main">
+      <div class="wrapper">
+        <h1 class="main-title"></h1>
+        <h2 class="main-subtitle">
+          I am a developer from Leipzig in Germany. I develop websites and help
+          people promote their projects online. Let's get in touch!
+        </h2>
+        <div class="main-btn"><a href="">My Projects</a></div>
+        <picture
+          ><source srcset="" media="(min-width: 800)" />
+          <img src="" alt=""
+        /></picture>
+      </div>
+    </section>
+    <section class="footer">
+      <h3 class="footer-text">
+        Copyright © 2021 Igal Vilensky. All Rights Reserved
+      </h3>
     </section>
   </body>
 </html>
