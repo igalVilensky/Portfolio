@@ -18,11 +18,11 @@ body {
 /* h1 {
   border: 1px dashed orange;
 } */
-/* section {
+section {
   border: 1px dotted yellowgreen;
 }
 
-div {
+/* div {
   border: 1px dashed orangered;
 } */
 
@@ -39,7 +39,7 @@ div {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 2px dotted yellowgreen;
+  border: 2px dotted rgb(255, 0, 0);
 }
 
 .top {
@@ -95,7 +95,8 @@ div {
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #0f26f3;
+  color: white;
 }
 
 /* TOP SECTION TEXT */
@@ -105,6 +106,7 @@ div {
   padding-left: 15px;
   padding-right: 15px;
   margin: 40px auto;
+  margin-top: 0;
   /* background: black; */
   display: flex;
   flex-direction: column;
@@ -141,7 +143,7 @@ div {
   font-weight: 700;
   display: block;
   position: relative;
-  top: 40px;
+  top: 28px;
 }
 
 #name {
@@ -156,20 +158,40 @@ div {
   padding-right: 15px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  /* border: 2px solid rgb(81, 98, 255); */
-  width: 500px;
-  height: 50px;
+  /*   border: 2px solid rgb(81, 98, 255); */
+  width: 550px;
+  min-width: 500px;
+  max-width: 1170px;
+  height: 100px;
 }
 
 .main-btn {
+  background-color: #0f26f3;
+
+  height: 70px;
+  width: 230px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  border: 3px solid #0f26f3;
+  transform: scale(1.1);
 }
 
 .main-btn > a {
   color: white;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 /* SCROLL */
