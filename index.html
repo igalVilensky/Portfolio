@@ -2,98 +2,234 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Igal Vilensky</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap"
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="top">
-      <header>
-        <div class="header">
-          <div class="logo">
-            <a href="./index.html"><img src="./image/logo.png" alt="" /></a>
+    <header>
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
+      </div>
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="landing-text">
+        <h1>Igal Vilensky</h1>
+        <h6>Webdeveloper and a good man</h6>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="profile-img"><img src="./image/profile.jpg" alt="" /></div>
+        <div class="about-details">
+          <div class="about-heading">
+            <h1>About</h1>
+            <h6>Myself</h6>
           </div>
-          <nav>
-            <ul class="nav">
-              <li class="list-item">
-                <a class="nav-link" href="./projects.html">PROJECTS</a>
-              </li>
-              <li class="list-item">
-                <a class="nav-link" href="./services.html">SERVICES</a>
-              </li>
-              <li class="list-item">
-                <a class="nav-link" href="./skills.html">SKILLS</a>
-              </li>
-              <li class="list-item">
-                <a class="nav-link" href="./about.html">ABOUT</a>
-              </li>
-              <li class="list-item">
-                <a class="nav-link" href="./contact.html">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
+            incidunt minus quod illum voluptate eligendi, labore praesentium cum
+            totam quia itaque omnis est sint rem aliquam dolor. Nemo, voluptas
+            repellendus! totam quia itaque omnis est sint rem aliquam dolor.
+            Nemo, voluptas repellendus!
+          </p>
         </div>
-      </header>
-      <div class="wrapper-h1-h2">
-        <h1 class="title-h1">Hey, I am a <span> Webdeveloper</span>!</h1>
-        <h2 class="main-subtitle">
-          My name is <span id="name">Igal Vilensky</span> and I am a
-          WebDeveloper from Leipzig in Germany. I develop websites and help
-          people promote their projects online.
-          <br />
-          <span id="color-text"> Let's get in touch!</span>
-        </h2>
+        <div class="social-media">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="icon-link"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="icon-link"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="icon-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="btn-wrapper">
-        <div class="main-btn"><a href="">My Projects</a></div>
-        <div class="main-btn"><a href="">Contact me</a></div>
-      </div>
-      <picture
-        ><source srcset="" media="(min-width: 800)" />
-        <img src="" alt=""
-      /></picture>
-      <button class="btn-scroll">
-        <img src="./image/Mouse-scroll.png" alt="Sroll" />
-      </button>
     </section>
-    <section class="main">
-      <div class="wrapper">
-        <div class="box-about">
-          <div class="box-about-item">
-            <img src="./image/bg-portfolio.jpg" alt="Workplace" />
-            <img src="./image/photo.jpg" alt="Photo" />
-          </div>
-          <div class="box-about-item">
-            <h2 class="title-h2">About Me</h2>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Services</h1>
+          <h6>What I can do for you</h6>
+        </div>
+        <div class="my-skills">
+          <div class="skill">
+            <div class="icon-container"><i class="fas fa-layer-group"></i></div>
+            <h1>Web Design</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              unde consequatur magni eaque. Tempore a necessitatibus rerum dicta
-              ad repellat molestiae ut architecto! Et officia aperiam quos, quia
-              veritatis id?
+              I value simple content structure, clean design patterns, and
+              thoughtful interactions.
             </p>
-            <div class="progress-bar">
-              <div class="progress-ba-line"></div>
-              <div class="progress-ba-text">
-                <p>HTML</p>
-                <p>CSS / Sass</p>
-                <p>JavaScript</p>
-              </div>
-            </div>
+          </div>
+          <div class="skill">
+            <div class="icon-container"><i class="fas fa-code-group"></i></div>
+            <h1>Web Development</h1>
+            <p>
+              I like to code things from scratch, and enjoy bringing ideas to
+              life in the browser.
+            </p>
+          </div>
+          <div class="skill">
+            <div class="icon-container"><i class="fas fa-chart-group"></i></div>
+            <h1>Product Strategy</h1>
+            <p>
+              Product Strategy is a system of achievable goals and visions that
+              work together to align the team around desirable outcomes for both
+              the business and your customers.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="footer">
-      <h3 class="footer-text">
-        Copyright © 2021 Igal Vilensky. All Rights Reserved
-      </h3>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Portfolio</h1>
+          <h6>View some of my recent work</h6>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img">
+            <img src="./image/portitem1.jpg" alt="" />
+          </div>
+          <div class="portfolio-description">
+            <h6>Web Development</h6>
+            <h1>Blog Website</h1>
+            <p>
+              I like to code things from scratch, and enjoy bringing ideas to
+              life in the browser.
+            </p>
+            <a href="#" class="cta">View Details</a>
+          </div>Product Strategy
+            <h6>Web Design</h6>
+            <h1>Product Layout</h1>
+            <p>
+              I value simple content structure, clean design patterns, and
+              thoughtful interactions.
+            </p>
+            <a href="#" class="cta">View Details</a>
+          </div>
+          <div class="portfolio-img">
+            <img src="./image/portitem2.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-img">
+            <img src="./image/portitem3.jpeg" alt="" />
+          </div>
+          <div class="portfolio-description">
+            <h6>Web Design</h6>
+            <h1>Product Sketch</h1>
+            <p>
+              Product Strategy is a system of achievable goals and visions that
+              work together to align the team around desirable outcomes for both
+              the business and your customers.
+            </p>
+            <a href="#" class="cta">View Details</a>
+          </div>
+        </div>
+      </div>
     </section>
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Work Experience</h1>
+          <h6>Past and current jobs</h6>
+        </div>
+        <div class="timeline">
+          <ul>
+            <li class="date" data-date="2018 - Present">
+              <h1>Cashdo</h1>
+              <p>
+                Product Strategy is a system of achievable goals and visions
+                that work together to align the team around desirable outcomes
+                for both the business and your customers.
+              </p>
+            </li>
+            <li class="date" data-date="2016 - 2018">
+              <h1>Myfxbook</h1>
+              <p>
+                Product Strategy is a system of achievable goals and visions
+                that work together to align the team around desirable outcomes
+                for both the business and your customers.
+              </p>
+            </li>
+            <li class="date" data-date="2014 - 2016">
+              <h1>Cellcom</h1>
+              <p>
+                Product Strategy is a system of achievable goals and visions
+                that work together to align the team around desirable outcomes
+                for both the business and your customers.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Contact</h1>
+          <h6>Let's work together</h6>
+        </div>
+        <form action="">
+          <label for="name">Name:</label
+          ><input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name..."
+            required
+          />
+          <label for="email">Email:</label
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email..."
+            required
+          />
+          <label for="service">Services:</label>
+          <select name="service" id="service">
+            <option value="">Web Design</option>
+            <option value="">Web Development</option>
+            <option value="">Product Strategy</option>
+          </select>
+          <label for="subject">Subject:</label>
+          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+    <footer class="copyright"><div class="up" id="up"><i class="fas fa-chevron-up"></i><p>&copy; 2021 Igal Vilensky</p></div></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
