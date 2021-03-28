@@ -23,7 +23,7 @@ body {
 }
 
 section {
-  padding: 6rem;
+  padding: 6rem 0;
 }
 
 a {
@@ -56,7 +56,7 @@ img {
 }
 
 .section-heading h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-weight: 300;
@@ -206,7 +206,7 @@ li {
 }
 
 .landing-text h1 {
-  font-size: 20rem;
+  font-size: 15rem;
   font-family: OriginTech, sans-serif;
   background: linear-gradient(#9879ff, #f7dd00);
   -webkit-background-clip: text;
@@ -216,7 +216,7 @@ li {
 }
 
 .landing-text h6 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 /*End header*/
@@ -253,6 +253,12 @@ li {
 
 .about-details {
   flex: 1;
+}
+
+.about-details p {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .social-media {
@@ -500,7 +506,7 @@ input[type="submit"]:hover {
 }
 /* End footer */
 
-/* Star animation */
+/* Start animation */
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgba(155, 132, 255, 0.99);
@@ -513,3 +519,126 @@ input[type="submit"]:hover {
   }
 }
 /* End animation */
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url(../image/bg2.jpg) no-repeat center fixed;
+    background-size: cover;
+  }
+
+  .landing-text h1 {
+    font-size: 10rem;
+  }
+
+  .landing-text h6 {
+    font-size: 2.5rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  li {
+    margin: 2rem 0;
+  }
+
+  .nav-link {
+    font-size: 4.5rem;
+  }
+
+  .about-heading h1 {
+    font-size: 8rem;
+  }
+
+  .section-heading h1 {
+    font-size: 3rem;
+  }
+
+  .about-details .nav-list {
+    flex-direction: initial;
+  }
+
+  .about-details li {
+    margin: 0 2rem;
+  }
+
+  .icon-container {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .icon-container i {
+    font-size: 4rem;
+  }
+
+  .timeline ul {
+    margin: 0 0 0 auto;
+  }
+
+  .timeline .date::before {
+    left: -20rem;
+  }
+
+  .timeline .date::after {
+    left: -5.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggler {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .landing-text h1 {
+    font-size: 8rem;
+  }
+
+  .landing-text h6 {
+    font-size: 1.4rem;
+  }
+
+  .nav-link {
+    font-size: 3.5rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .profile-img {
+    margin: 0 0 7rem 0;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+    order: 1;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+  }
+
+  .timeline p {
+    font-size: 1.6rem;
+  }
+
+  .timeline .date::before {
+    font-size: 1.4rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .up {
+    right: 2rem;
+  }
+}
