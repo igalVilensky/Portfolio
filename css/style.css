@@ -340,10 +340,66 @@ li {
   flex: 1;
 }
 
+.portfolio-description h1 {
+  font-size: 3rem;
+
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
 .portfolio-description h6 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 300;
   opacity: 0.3;
 }
+
+.portfolio-description .cta {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 2.5rem;
+  color: #79b3fa;
+  transition: color 650ms;
+}
+
+.portfolio-description .cta:hover {
+  color: #0165df;
+}
+
 /*End portfolio*/
+
+/*Start timeline*/
+.timeline ul {
+  border-left: 4px solid #f7dd00;
+  border-radius: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  position: relative;
+  padding: 5rem;
+  list-style: none;
+  text-align: left;
+  width: 70%;
+}
+
+.timeline h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+}
+
+.timeline .date {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.timeline .date:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+/*End timeline*/
