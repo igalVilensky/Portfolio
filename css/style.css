@@ -522,6 +522,21 @@ input[type="submit"]:hover {
 
 /* Media queries */
 
+@media screen and (max-width: 1700px) {
+  .nav-list {
+    flex-direction: column;
+    border: 3px solid yellowgreen;
+  }
+
+  li {
+    margin: 2rem 0;
+  }
+
+  .nav-link {
+    font-size: 4.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     background: url(../image/bg2.jpg) no-repeat center fixed;
