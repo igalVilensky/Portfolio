@@ -359,7 +359,7 @@ li {
   text-transform: uppercase;
   display: inline-block;
   margin-top: 2.5rem;
-  color: #79b3fa;
+  color: #2db5f2;
   transition: color 650ms;
 }
 
@@ -373,7 +373,7 @@ li {
 .timeline ul {
   border-left: 4px solid #f7dd00;
   border-radius: 0.8rem;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   position: relative;
   padding: 5rem;
@@ -402,4 +402,114 @@ li {
   margin-bottom: 0;
   border: none;
 }
+.timeline .date::before,
+.timeline .date::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline .date::before {
+  content: attr(data-date);
+  left: -21rem;
+  text-align: right;
+  min-width: 12rem;
+  font-size: 1.5rem;
+}
+
+.timeline .date::after {
+  content: "";
+  box-shadow: 0 0 0 4px #9b84ff;
+  border-radius: 100%;
+  left: -7.95rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #2e2e2e;
+}
 /*End timeline*/
+
+/* Start contact */
+.contact {
+  background-color: #303030;
+}
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+form label {
+  font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  outline-color: #9b84ff;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: #9b84ff;
+  color: #eee;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  color: #303030;
+  background-color: #f7dd00;
+}
+/* End contact */
+
+/* Start footer */
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color: #262626;
+}
+
+.up {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background-color: #eee;
+  margin-top: -80px;
+  right: 5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  animation: pulse 2s infinite;
+}
+
+.up i {
+  color: #9b84ff;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.copyright p {
+  font-size: 2rem;
+}
+/* End footer */
+
+/* Star animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(155, 132, 255, 0.99);
+  }
+  70% {
+    box-shadow: 0 0 0 3rem rgba(155, 132, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(155, 132, 255, 0);
+  }
+}
+/* End animation */
