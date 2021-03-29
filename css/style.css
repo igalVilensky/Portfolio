@@ -524,12 +524,13 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 1700px) {
   .nav-list {
-    flex-direction: column;
-    border: 3px solid yellowgreen;
+    justify-content: center;
+
+    /*  border: 3px solid yellowgreen; */
   }
 
   li {
-    margin: 2rem 0;
+    margin: 2rem 2rem;
   }
 
   .nav-link {
