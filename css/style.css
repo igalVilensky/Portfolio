@@ -491,6 +491,7 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   /* border: 2px solid red; */
   animation: pulse 2s infinite;
 }
@@ -525,8 +526,6 @@ input[type="submit"]:hover {
 @media screen and (max-width: 1700px) {
   .nav-list {
     justify-content: center;
-
-    /*  border: 3px solid yellowgreen; */
   }
 
   li {
